@@ -10,7 +10,8 @@ public class playerMovement : MonoBehaviour
 
     //translation and rotation inputs
     public float translateInput;
-    public float rotateInput;
+    public float horizontalRotateInput;
+    public float verticalRotateInput;
 
     void Start()
     {
@@ -26,8 +27,12 @@ public class playerMovement : MonoBehaviour
         //Translation input keys: "w" forward, "s" backward
         translateInput = Input.GetAxis("Vertical");
 
-        //Rotation input keys: "a" left, "d" right
-        rotateInput = Input.GetAxis("Horizontal");
+        //Horizontal rotation input keys (allows horizontal movement): "a" left, "d" right
+        horizontalRotateInput = Input.GetAxis("Horizontal");
+
+        //Vertical rotation input keys (allows vertical movement): "a" left, "d" right
+        verticalRotateInput = Input.GetAxis("Fire1");
+
 
         /* 
         Inputs returned are either 1 or -1, 
@@ -38,7 +43,9 @@ public class playerMovement : MonoBehaviour
         change in framerate by returning time in seconds between
         last frame and current frame
         */
+        
         transform.Translate(Vector3.forward * Time.deltaTime * speed * translateInput);
-        transform.Rotate(Vector3.up, turnSpeed * rotateInput * Time.deltaTime);
+        transform.Rotate(Vector3.up, turnSpeed * horizontalRotateInput * Time.deltaTime);
+        transform.Rotate(Vector3.right, turnSpeed * verticalRotateInput * Time.deltaTime);
     }
 }
