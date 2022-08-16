@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
         //Horizontal rotation input keys (allows horizontal movement): "a" left, "d" right
         horizontalRotateInput = Input.GetAxis("Horizontal");
 
-        //Vertical rotation input keys (allows vertical movement): "a" left, "d" right
+        //Vertical rotation input keys (allows vertical movement): "i" up, "k" down
         verticalRotateInput = Input.GetAxis("Fire1");
 
 
