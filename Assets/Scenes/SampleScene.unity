@@ -338,6 +338,23 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5947449511865704220, guid: 4a0ef5c731ae8a843858078d6564e802, type: 3}
   m_PrefabInstance: {fileID: 7397117578218467261}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &648917482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648917481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 919adcce618b6d840a49cafdafd757d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  turnSpeed: 25
+  translateInput: 0
+  horizontalRotateInput: 0
+  verticalRotateInput: 0
 --- !u!114 &648917488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1426,5 +1443,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: NanoBot
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5947449511865704219, guid: 4a0ef5c731ae8a843858078d6564e802, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4a0ef5c731ae8a843858078d6564e802, type: 3}
