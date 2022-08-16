@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     //translation and rotation speeds
     public float speed = 5.0f;
@@ -46,6 +46,6 @@ public class playerMovement : MonoBehaviour
         
         transform.Translate(Vector3.forward * Time.deltaTime * speed * translateInput);
         transform.Rotate(Vector3.up, turnSpeed * horizontalRotateInput * Time.deltaTime);
-        transform.Rotate(Vector3.right, turnSpeed * verticalRotateInput * Time.deltaTime);
+        transform.Rotate(Vector3.left, turnSpeed * verticalRotateInput * Time.deltaTime);
     }
 }
