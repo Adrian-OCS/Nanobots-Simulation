@@ -7,13 +7,10 @@ Software details: The player is the nanobot, and the red spheres are the tumors.
 
 Controls:
 
-"W"- Forward translation
-"S"- Backward translation
-
-"D"- Right rotation
-"A"- Left rotation
-
-"I"- Upward rotation
-"K"- Downward Rotation
-
+"W"- Forward translation,
+"S"- Backward translation,
+"D"- Right rotation,
+"A"- Left rotation,
+"I"- Upward rotation,
+"K"- Downward Rotation,
 "J"- Ability to destroy tumors (red spheres) when close to them
