@@ -22,5 +22,5 @@ public class Ability : MonoBehaviour
             Destroy(other.gameObject);  
         }
     }
-}
+    }
 }
