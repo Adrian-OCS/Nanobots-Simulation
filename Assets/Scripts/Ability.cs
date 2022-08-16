@@ -16,11 +16,11 @@ public class Ability : MonoBehaviour
     
     //Ability to destroy tumors when close to them: press "j"
     private void OnTriggerStay(Collider other) {
-    {
+    
          if (Input.GetKeyDown(KeyCode.J))
         {
             Destroy(other.gameObject);  
         }
-    }
+    
     }
 }
